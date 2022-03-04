@@ -1,0 +1,45 @@
+/*global styles */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+/* body*/
+body {
+  height: 100%;
+  background: #333 url(./images/pexels-lukas-669619.jpg) no-repeat center
+    center/cover fixed;
+  color: #fff;
+  font-family: poppins, sans-serif;
+}
+#header {
+  padding: 15px;
+}
+#transparent_background {
+  background: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  /* top: 0;
+  left: 0;
+  bottom: 0; */
+}
+
+h1,
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#survey_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(96, 157, 159, 0.8);
+  margin: 0 230px;
+  border-radius: 5px;
+  padding: 20px;
+}
+label {
+  color: white;
+}
