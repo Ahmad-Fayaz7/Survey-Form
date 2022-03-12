@@ -1,45 +1,83 @@
 /*global styles */
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   box-sizing: border-box;
+  padding: 0;
 }
 /* body*/
 body {
-  height: 100%;
-  background: #333 url(./images/pexels-lukas-669619.jpg) no-repeat center
-    center/cover fixed;
+  /* height: 100%; */
+  background: url(https://images.pexels.com/photos/8636591/pexels-photo-8636591.jpeg?cs=srgb&dl=pexels-kampus-production-8636591.jpg&fm=jpg)
+    no-repeat center/cover fixed;
   color: #fff;
   font-family: poppins, sans-serif;
+  line-height: 1.6;
 }
-#header {
-  padding: 15px;
+#main {
+  /* background-color: rgba(135,213,226,0.8); */
+  background-color: rgba(180, 193, 209, 0.4);
+  font-size: 18px;
 }
-#transparent_background {
-  background: rgba(0, 0, 0, 0.3);
-  height: 100%;
-  width: 100%;
-  position: relative;
+.text-center {
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+.text-center p {
+  font-style: italic;
+}
 
-  /* top: 0;
-  left: 0;
-  bottom: 0; */
-}
-
-h1,
-p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 #survey_form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(96, 157, 159, 0.8);
-  margin: 0 230px;
+  /* background-color: rgba(38, 151, 192, 0.8); */
+  background-color: rgba(4, 47, 102, 0.7);
+  width: 750px;
+  padding: 40px;
   border-radius: 5px;
-  padding: 20px;
+  margin: auto;
 }
-label {
-  color: white;
+#survey_form .form-group {
+  margin-top: 15px;
+}
+#survey_form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+#survey_form .form-group2 {
+  margin-top: 8px;
+  /* font-size: 18px; */
+}
+#survey_form .form-group2 label {
+  /* display: block; */
+  margin-bottom: 5px;
+}
+#survey_form input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: #ced4da 1px solid 5px;
+  font-size: inherit;
+  color: gray;
+}
+
+#survey_form input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+}
+#survey_form input[type="radio"] {
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+}
+#submit_button {
+  background-color: tomato;
+  margin-top: 20px;
+  border: #ced4da 1px solid;
+  border-radius: 5px;
+  color: white !important;
+  font-family: poppins, sans-serif;
+  /* font-size: 18px; */
 }
